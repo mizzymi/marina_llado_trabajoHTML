@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body>
+    <header>
+        <!-- Encabezado de la página -->
+        <nav>
+            <img src="./../assets/img/logo.png" alt="Logotipo de la Empresa" id="logo">
+            <!-- Imagen del logotipo de la empresa -->
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <!-- Enlace a la página de inicio -->
+                <li><a href="./productos.html">Productos</a></li>
+                <!-- Enlace a la página de productos -->
+                <li><a href="./presupuestos.html" class="activo">Presupuesto</a></li>
+                <!-- Enlace a la página de presupuestos -->
+                <li><a href="./contacto.html">Contacto</a></li>
+                <!-- Enlace a la página de contacto -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Define el contenido principal de la página -->
+        <h1>Solicitar Presupuesto</h1>
+        
+        <!-- Título principal del formulario -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <!-- Campo para el nombre -->
+            <input type="text" id="nombre" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="El nombre solo debe contener letras y espacios." required>
+            <label for="email">Email:</label>
+            <!-- Campo para el email -->
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <!-- Campo para el teléfono -->
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="El teléfono debe contener 9 dígitos." required>
+            <label for="info" id="info">Solicite más información:</label>
+            <!-- Campo para información adicional -->
+            <textarea id="info" name="info" required></textarea>
+            <label for="acepto">
+            <!-- Checkbox para aceptar la política de privacidad -->
+            <input type="checkbox" id="acepto" name="acepto" required> Acepto la Política de Privacidad
+            </label>
+            <button type="submit">Enviar</button>
+            <!-- Botón para enviar el formulario -->
+        </form>
+    </main>
+
+    <footer>
+        <!-- Define el pie de página -->
+        <ul>
+            <!-- Lista de redes sociales -->
+            <li><a href="https://www.instagram.com" target="_blank"><img src="./../assets/img/red_social_1.png" alt="Red Social 1"></a></li>
+            <li><a href="https://x.com/" target="_blank"><img src="./../assets/img/red_social_2.png" alt="Red Social 2"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="./../assets/img/red_social_3.png" alt="Red Social 3"></a></li>
+        </ul>
+        <p>Dirección de la Empresa</p>
+        <!-- Párrafo con la dirección de la empresa -->
+        <p><a href="./aviso_legal.html">Aviso Legal</a></p>
+        <!-- Párrafo con un enlace al aviso legal de la empresa -->
+    </footer>
+</body>
+</html>

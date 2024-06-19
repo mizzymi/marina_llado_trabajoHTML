@@ -1,0 +1,21 @@
+/* Estilos adicionales para el formulario */
+form {
+    max-width: 75%; /* Establece el ancho máximo del formulario al 75% del viewport */
+    margin: auto; /* Centra el formulario horizontalmente */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el formulario en dos columnas de igual ancho */
+    gap: 10px; /* Espacio entre elementos */
+}
+label {
+    display: flex;
+    align-items: center;
+}
+label#info {
+    grid-column: 2; /* Coloca el label 'info' en la segunda columna */
+    align-self: start; /* Alinea el label 'info' al principio */
+}
+#info {
+    grid-column: 2; /* Coloca el textarea en la segunda columna */
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+    min-height: 100px; /* Altura mínima del textarea */
+}
